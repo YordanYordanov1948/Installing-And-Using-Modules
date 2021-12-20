@@ -11,4 +11,11 @@ window.addEventListener("DOMContentLoaded", () => {
     { job: "programmer", class: "is-danger" },
   ];
   const articles = document.querySelectorAll("article");
+
+  var getsArray = R.pluck("class");
+  getsArray([
+    { name: "John", class: "is-primary" },
+    { age: 23, class: "is-warning" },
+    { job: "programmer", class: "is-danger" },
+  ]);
 });
